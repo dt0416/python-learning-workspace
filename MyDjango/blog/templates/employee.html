@@ -1,0 +1,13 @@
+<html>
+<head>
+	<title>{{title}}</title>
+</head>
+<body>
+	<table>
+		<tr><th>Name</th><th>Age</th></tr>
+		{% for emp in emps %}
+			<tr><td>{{emp.name}}</td><td>{{emp.age}}</td></tr>
+		{% endfor %}
+	</table>
+</body>
+</html>

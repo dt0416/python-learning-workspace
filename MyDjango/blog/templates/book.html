@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>{{title}}</title>
+</head>
+<body>
+	<h3>Books</h3>
+	<table>
+		<tr><th>Name</th><th>Authors</th></tr>
+		{% for book in books %}
+			<tr>
+				<td>{{book.name}}</td>
+				<td>
+				{% for author in book.authors.all %}
+					{{author.name}}<br />
+				{% endfor %}
+				</td>
+			</tr>
+		{% endfor %}
+	</table>
+	
+	<h3>Authors</h3>
+	<table>
+		<tr><th>Name</th><th>Books</th></tr>
+		{% for author in authors %}
+			<tr>
+				<td>{{author.name}}</td>
+				<td>
+				{% for book in author.book_set.all %}
+					{{book.name}}<br />
+				{% endfor %}
+				</td>
+			</tr>
+		{% endfor %}
+	</table>
+</body>
+</html>

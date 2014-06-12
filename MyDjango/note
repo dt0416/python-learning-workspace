@@ -1,0 +1,12 @@
+Example¡G
+common:
+http://127.0.0.1:8000/blog/index
+
+single table:
+http://127.0.0.1:8000/blog/employee
+
+manytomany:
+http://127.0.0.1:8000/blog/book
+
+form:
+http://127.0.0.1:8000/blog/register/
