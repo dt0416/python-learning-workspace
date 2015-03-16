@@ -1,0 +1,1 @@
+Python、Django learning project
